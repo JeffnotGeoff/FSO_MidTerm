@@ -7,7 +7,7 @@ class App : public wxApp
 {
 
 public:
-	Window* quiz = nullptr;
+	Window* window = nullptr;
 	virtual bool OnInit();
 
 };

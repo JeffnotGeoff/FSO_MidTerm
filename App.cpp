@@ -3,8 +3,8 @@
 
 wxIMPLEMENT_APP(App);
 
-bool App : OnInit() {
-	quiz = new Window();
-	quiz->Show();
+bool App::OnInit() {
+	window = new Window();
+	window->Show();
 	return true;
 }
