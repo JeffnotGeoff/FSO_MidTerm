@@ -1,7 +1,7 @@
 #include "Window.h"
 
 
-Window::Window() : wxFrame(nullptr, wxID_ANY, "Quiz Time!", wxPoint(200, 200), wxSize(800, 300)) {
+Window::Window() : wxFrame(nullptr, wxID_ANY, "Quiz Time!", wxPoint(200, 200), wxSize(300, 600)) {
 
 	buttons = new wxButton * [rows];
 
@@ -19,4 +19,8 @@ Window::Window() : wxFrame(nullptr, wxID_ANY, "Quiz Time!", wxPoint(200, 200), w
 
 	this->SetSizer(grid);
 	grid->Layout();
+}
+
+Window::~Window() {
+	delete[] buttons;
 }
