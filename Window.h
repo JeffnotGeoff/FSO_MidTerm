@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 #include "wx/wx.h"
 
 class Window : public wxFrame
